@@ -1,6 +1,6 @@
+#Dockerfile to copy war to tomcat
 # Pull base image 
 From tomcat:8-jre8 
 
-# Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
+# Copy webapp war to tomcat 
 COPY ./webapp.war /usr/local/tomcat/webapps
